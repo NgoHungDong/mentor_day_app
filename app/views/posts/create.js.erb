@@ -1,0 +1,7 @@
+<% if @post.errors.present? %>
+  <% @post.errors.messages.values.flatten.each do |message| %>
+    $.notify('<%= message %>', "error");
+  <% end %>
+<% else %>
+  $.notify("Your message is saved!", "success");
+<% end %>

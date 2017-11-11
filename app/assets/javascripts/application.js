@@ -10,9 +10,10 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require rails-ujs
-//= require turbolinks
+//= require jquery
+//= require jquery_ujs
 //= require_tree .
+
 $('document').ready(function(){
   $('input[type="text"], input[type="email"], textarea').focus(function(){
     var background = $(this).attr('id');
