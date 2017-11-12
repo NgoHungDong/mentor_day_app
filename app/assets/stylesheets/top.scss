@@ -111,7 +111,7 @@ form{
 label, input, textarea{
   display: block; 
 }
-input, textarea{
+input, textarea, select{
   width: 500px; 
   border: none;
   border-radius: 20px;
@@ -161,6 +161,7 @@ label{
   margin-top: 20px;
   padding-left: 20px;
 }
+
 .formgroup, .formgroup-active, .formgroup-error{
   background-repeat: no-repeat;
   background-position: right bottom;

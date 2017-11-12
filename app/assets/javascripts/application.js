@@ -15,12 +15,12 @@
 //= require_tree .
 
 $('document').ready(function(){
-  $('input[type="text"], input[type="email"], textarea').focus(function(){
+  $('input[type="text"], input[type="email"], textarea, select').focus(function(){
     var background = $(this).attr('id');
     $('#' + background + '-form').addClass('formgroup-active');
     $('#' + background + '-form').removeClass('formgroup-error');
   });
-  $('input[type="text"], input[type="email"], textarea').blur(function(){
+  $('input[type="text"], input[type="email"], textarea, select').blur(function(){
     var background = $(this).attr('id');
     $('#' + background + '-form').removeClass('formgroup-active');
   });

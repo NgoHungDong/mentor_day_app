@@ -11,13 +11,19 @@
   <form id="waterform" action="/post" method="post" data-remote="true">
 
   <div class="formgroup" id="author-form">
-      <label for="author">From*</label>
+      <label for="author">Mentee*</label>
       <input type="text" id="author" name="author" />
   </div>
 
   <div class="formgroup" id="recipient-form">
-      <label for="recipient">To*</label>
-      <input type="text" id="recipient" name="recipient" />
+      <label for="recipient">Mentor*</label>
+      <select id="recipient" name="recipient">
+        <% Post::MENTORS.each do |mentor| %>
+          <option value='<%= mentor %>'>
+            <%= mentor %>
+          </option>
+        <% end %>
+      </select>
   </div>
 
   <div class="formgroup" id="message-form">
