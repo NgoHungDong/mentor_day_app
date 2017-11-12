@@ -4,4 +4,6 @@
   <% end %>
 <% else %>
   $.notify("Your message is saved!", "success");
+  $(":input:not(input[type=submit], select)").val("");
+  $('#recipient')[0].selectedIndex = 0;
 <% end %>
