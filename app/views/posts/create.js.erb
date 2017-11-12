@@ -1,6 +1,11 @@
 <% if @post.errors.present? %>
-  <% @post.errors.messages.values.flatten.each do |message| %>
-    $.notify('<%= message %>', "error");
+  <% @post.errors.messages.each do |key, val| %>
+    var e = '#' + '<%= key.to_s %>'
+    debugger
+    $(e).notify(
+      '<%= val.join(',') %>', 
+      { position:"right" }
+    );
   <% end %>
 <% else %>
   $.notify("Your message is saved!", "success");
