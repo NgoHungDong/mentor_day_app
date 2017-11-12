@@ -20,7 +20,7 @@
 }
 body {
   background-color: #3E69C3;
-  background-image: url(http://scarbroughstudios.com/img/codepen.svg);
+  background-image: image-url('codepen.svg');
   background-position: center center;
   background-size: 500px;  
   @include animation(scrollBad 5s linear infinite);
@@ -63,9 +63,9 @@ h1{
 }
 
 .fish{
-  background-image: url('http://www.geertjanhendriks.nl/codepen/form/fish.png');
+  background-image: image-url('turtle_move.png');
   width: 235px;
-  height: 104px;
+  height: 235px;
   margin-left: -235px;
   position: absolute; 
   animation: myfirst 24s;
@@ -89,7 +89,7 @@ h1{
 
 header{
   height: 160px;
-  background: url('http://www.geertjanhendriks.nl/codepen/form/golf.png') repeat-x bottom;
+  background: image-url('golf.png') repeat-x bottom;
 }
 
 #form{
@@ -174,13 +174,13 @@ label{
 }
 
 .formgroup{
-  background-image: url('http://www.geertjanhendriks.nl/codepen/form/pixel.gif'); 
+  background-image: image-url('pixel.gif'); 
 }
 .formgroup-active{
-  background-image: url('http://www.geertjanhendriks.nl/codepen/form/octo.png');
+  background-image: image-url('octo_old1.png');
 }
 .formgroup-error{
-  background-image: url('http://www.geertjanhendriks.nl/codepen/form/octo-error.png');
+  background-image: image-url('octo_old1.png');
   color: red;
 }
 .pen {
