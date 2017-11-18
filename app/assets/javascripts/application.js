@@ -86,3 +86,7 @@ $(document).ready(function(){
     }
   }, 1);
 });
+
+$(document).ready(function(){
+  Page.init();
+});
