@@ -90,7 +90,7 @@ a:hover {
 	display: block;
 	color: #fff;
 	font-size: 1.1em;
-	line-height: 3.5;
+	line-height: 2.5;
 	padding: 0 20px;
 	cursor: pointer;
 	background: #f1103a;
@@ -237,7 +237,7 @@ a:hover {
 }
 
 .content p {
-	font-size: 1.2em;
+	font-size: 1em;
 	line-height: 1.6;
 	font-weight: 300;
 	padding: 5px 8%;
