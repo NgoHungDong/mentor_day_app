@@ -1,14 +1,25 @@
 <div class="bb-item" id=<%="item#{index}"%>>
   <div class="content">
     <div class="scroller">
-      <h2><%= Post::DISPLAY_NAMES[mentor] %></h2>
+      <h2>
+        <% if Post::DISPLAY_NAMES[mentor].present? %>
+          <%= Post::DISPLAY_NAMES[mentor] %>
+        <% else %>
+          All Ventura
+        <% end %>
+      </h2>
       <div class="columns">
         <div class="column col-4">
-          <%= image_tag "mentors/#{Post::IMAGES[mentor]}.jpg", class: 'img-responsive' %>
+          <% if Post::IMAGES[mentor].present? %>
+            <%= image_tag "mentors/#{Post::IMAGES[mentor]}.jpg", class: 'img-responsive' %>
+          <% else %>
+            <%= image_tag "turtle.png", class: 'img-responsive' %>
+          <% end %>
         </div>
         <div class="column col-8">
-          <% Post.by_mentor(mentor).each do |post| %>
-          <p><%= post.message %></p>
+          <% Post.by_mentor(mentor).each_with_index do |post, post_index| %>
+            <div style="font-weight: bold;">Loved message <%= post_index + 1 %>:</div>
+            <div><%= post.message %></div>
           <% end %>
         </div>
       </div>

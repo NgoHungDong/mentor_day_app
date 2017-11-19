@@ -41,7 +41,6 @@ class Post < ApplicationRecord
   ]
 
   IMAGES = {
-    'UMINO SATOSHI' => 'umino',
     'Nguyễn Ngô Mai Uyên' => 'uyen',
     'Trương Hương Duyên' => 'duyen',
     'Nguyễn Thị Như Ngọc' => 'ngoc',
@@ -49,11 +48,9 @@ class Post < ApplicationRecord
     'Đặng Bá Tới' => 'toi',
     'Nguyễn Võ Huy Hoàng' => 'hoang',
     'Lê Hồng Hiếu' => 'hieu',
-    'Nguyễn Trọng Hữu' => 'huu',
-    'Vũ Văn Toàn' => 'toan'
+    'Nguyễn Trọng Hữu' => 'huu'
   }
   DISPLAY_NAMES = {
-    'UMINO SATOSHI' => 'Umino-san',
     'Nguyễn Ngô Mai Uyên' => 'Uyên-san',
     'Trương Hương Duyên' => 'Duyên-san',
     'Nguyễn Thị Như Ngọc' => 'Ngọc-san',
@@ -61,8 +58,7 @@ class Post < ApplicationRecord
     'Đặng Bá Tới' => 'Tới-san',
     'Nguyễn Võ Huy Hoàng' => 'Hoàng-san',
     'Lê Hồng Hiếu' => 'Hiếu-san',
-    'Nguyễn Trọng Hữu' => 'Hữu-san',
-    'Vũ Văn Toàn' => 'Toàn-san'
+    'Nguyễn Trọng Hữu' => 'Hữu-san'
   }
 
   def self.by_mentor(mentor)
