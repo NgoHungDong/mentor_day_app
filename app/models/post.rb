@@ -50,6 +50,7 @@ class Post < ApplicationRecord
     'Lê Hồng Hiếu' => 'hieu',
     'Nguyễn Trọng Hữu' => 'huu'
   }
+  
   DISPLAY_NAMES = {
     'Nguyễn Ngô Mai Uyên' => 'Uyên-san',
     'Trương Hương Duyên' => 'Duyên-san',
