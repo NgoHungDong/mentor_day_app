@@ -9,17 +9,17 @@
         <% end %>
       </h2>
       <div class="columns">
-        <div class="column col-4">
+        <div class="column col-6">
           <% if Post::IMAGES[mentor].present? %>
             <%= image_tag "mentors/#{Post::IMAGES[mentor]}.jpg", class: 'img-responsive' %>
           <% else %>
             <%= image_tag "turtle.png", class: 'img-responsive' %>
           <% end %>
         </div>
-        <div class="column col-8">
+        <div class="column col-6">
           <% Post.by_mentor(mentor).each_with_index do |post, post_index| %>
             <div style="font-weight: bold;">Loved message <%= post_index + 1 %>:</div>
-            <div><%= post.message %></div>
+            <div style="border: 1px;"><%= post.message %></div>
           <% end %>
         </div>
       </div>

@@ -1,31 +1,14 @@
 <div id="container" class="container">
-  <div class="menu-panel">
-    <h3>Mentors</h3>
-    <ul id="menu-toc" class="menu-toc">
-      <% @mentors.each.with_index(1) do |mentor, index| %>
-      <li>
-        <a href=<%="#item#{index}"%>>
-          <%= Post::DISPLAY_NAMES[mentor] %>
-        </a>
-      </li>
-      <% end %>
-    </ul>
-  </div>
   <div class="bb-custom-wrapper">
     <div id="bb-bookblock" class="bb-bookblock">
       <% @mentors.each.with_index(1) do |mentor, index| %>
         <%= render partial: 'page', locals: {mentor: mentor, index: index} %>
       <% end %>
-      <nav>
-        <span id="bb-nav-prev">&larr;</span>
-        <span id="bb-nav-next">&rarr;</span>
-      </nav>
-      <span id="tblcontents" class="menu-button">Table of Contents</span>
     </div>
-    
-    </div><!-- /container -->
-    <%= javascript_include_tag 'jquery.mousewheel.js' %>
-    <%= javascript_include_tag 'jquery.jscrollpane.min.js' %>
-    <%= javascript_include_tag 'jquerypp.custom.js' %>
-    <%= javascript_include_tag 'jquery.bookblock.js' %>
-    <%= javascript_include_tag 'page.js' %>
+  </div>
+  <%= javascript_include_tag 'jquery.mousewheel.js' %>
+  <%= javascript_include_tag 'jquery.jscrollpane.min.js' %>
+  <%= javascript_include_tag 'jquerypp.custom.js' %>
+  <%= javascript_include_tag 'jquery.bookblock.js' %>
+  <%= javascript_include_tag 'page.js' %>
+</div><!-- /container -->
