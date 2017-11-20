@@ -1,4 +1,5 @@
 <div id="container" class="container">
+  <embed name="myMusic" loop="true" hidden="true" src="/perfect-melody.mp3"></embed>
   <div class="bb-custom-wrapper">
     <div id="bb-bookblock" class="bb-bookblock">
       <% @mentors.each.with_index(1) do |mentor, index| %>
@@ -11,5 +12,4 @@
   <%= javascript_include_tag 'jquerypp.custom.js' %>
   <%= javascript_include_tag 'jquery.bookblock.js' %>
   <%= javascript_include_tag 'page.js' %>
-  <embed name="myMusic" loop="true" hidden="true" src="/perfect-melody.mp3"></embed>
 </div><!-- /container -->
