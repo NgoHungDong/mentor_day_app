@@ -62,7 +62,8 @@ class Post < ApplicationRecord
     'Nguyễn Võ Huy Hoàng' => 'Hoàng-san',
     'Lê Hồng Hiếu' => 'Hiếu-san',
     'Nguyễn Trọng Hữu' => 'Hữu-san',
-    'Vũ Văn Toàn' => 'Toàn-san'
+    'Vũ Văn Toàn' => 'Toàn-san',
+    'UMINO SATOSHI' => 'Umino-san'
   }
 
   def self.by_mentor(mentor)
