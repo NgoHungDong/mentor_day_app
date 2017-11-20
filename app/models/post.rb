@@ -18,13 +18,13 @@ class Post < ApplicationRecord
     'Đặng Bá Tới',
     'Võ Đức Lợi',
     'Phạm Thanh Hùng',
-    
-    
+
+
     'Nguyễn Võ Huy Hoàng',
     'Nguyễn Thanh Tuấn',
     'Phạm Chân Nhân',
-    
-    
+
+
     'Lê Hồng Hiếu',
     'Nguyễn Trọng Hữu',
     'Văn Thị Phương Trang',
@@ -48,9 +48,11 @@ class Post < ApplicationRecord
     'Đặng Bá Tới' => 'toi',
     'Nguyễn Võ Huy Hoàng' => 'hoang',
     'Lê Hồng Hiếu' => 'hieu',
-    'Nguyễn Trọng Hữu' => 'huu'
+    'Nguyễn Trọng Hữu' => 'huu',
+    'UMINO SATOSHI' => 'umino',
+    'Vũ Văn Toàn' => 'toan'
   }
-  
+
   DISPLAY_NAMES = {
     'Nguyễn Ngô Mai Uyên' => 'Uyên-san',
     'Trương Hương Duyên' => 'Duyên-san',
