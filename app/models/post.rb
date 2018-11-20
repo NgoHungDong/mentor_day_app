@@ -4,6 +4,7 @@ class Post < ApplicationRecord
   validates :message, presence: { message: 'Please type in your message' }
 
   MENTORS = [
+    'Umino Satoshi',
     'Đặng Bá Tới',
     'Đặng Mai Hoài Lan',
     'Đinh Thanh Trúc',
@@ -33,6 +34,7 @@ class Post < ApplicationRecord
   ]
 
   IMAGES = {
+    'Umino Satoshi' => 'umino',
     'Đặng Bá Tới' => 'toi',
     'Đặng Mai Hoài Lan' => 'lan',
     'Đinh Thanh Trúc' => 'truc',
@@ -62,6 +64,7 @@ class Post < ApplicationRecord
   }
 
   DISPLAY_NAMES = {
+    'Umino Satoshi' => 'Umino-san',
     'Đặng Bá Tới' => 'Tới-san',
     'Đặng Mai Hoài Lan' => 'Lan-san',
     'Đinh Thanh Trúc' => 'Trúc-san',
